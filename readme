@@ -1,0 +1,7 @@
+Welcome to computerization!
+
+This is a automation test framework which is to facilitate web ui testing, API testing and mobile testing for more than one application.
+
+File structure:
+start.py: This is the place which starts the automation. This is actually a config file.
+computerization/base: It is the base folder which contains all the base features.
