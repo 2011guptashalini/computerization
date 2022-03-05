@@ -86,13 +86,13 @@ class Frontend:
         edge_cb["onvalue"] = "1"
         edge_cb["command"] = self.edge_cb_command
 
-        bs_user_name_text=tk.Entry(root)
-        bs_user_name_text["borderwidth"] = "1px"
-        bs_user_name_text["font"] = font_type
-        bs_user_name_text["fg"] = "#333333"
-        bs_user_name_text["justify"] = "center"
-        bs_user_name_text["text"] = "Provide BS username"
-        bs_user_name_text.place(x=370,y=190,width=211,height=30)
+        self.bs_user_name_text=tk.Entry(root)
+        self.bs_user_name_text["borderwidth"] = "1px"
+        self.bs_user_name_text["font"] = font_type
+        self.bs_user_name_text["fg"] = "#333333"
+        self.bs_user_name_text["justify"] = "center"
+        self.bs_user_name_text["text"] = "Provide BS username"
+        self.bs_user_name_text.place(x=370,y=190,width=211,height=30)
 
         bs_access_key_text=tk.Entry(root)
         bs_access_key_text["borderwidth"] = "1px"
@@ -240,6 +240,9 @@ class Frontend:
 
     def run_btn_command(self):
         print("command")
+        x = 'Chrome'
+ # backend class
+        print(self.bs_user_name_text.get())
 
 
     def cancel_btn_command(self):
